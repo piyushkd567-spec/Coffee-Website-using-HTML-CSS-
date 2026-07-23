@@ -21,16 +21,8 @@ CSS3: Custom styles utilizing Flexbox, custom positioning, and standard resets.
 
 Font Awesome: Iconography for contact details and navigation icons.
 
-📂 Project Structure
-Plaintext
-coffee-landing-page/
-├── index.html       # Primary HTML file
-├── style.css        # Custom CSS stylesheet
-├── coffeeLogo.png   # Store branding logo
-└── README.md        # Project documentation
 🚀 How to Run Locally
 Clone the repository:
-
 1) Bash
 git clone https://github.com/your-username/your-repo-name.git
 2) Open the project:
