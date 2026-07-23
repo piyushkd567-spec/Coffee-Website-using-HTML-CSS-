@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    height: 75px;
+    background-color: #1F150C;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #412D15;
+    color:white;
+}
+.logo img{
+    width: 170px;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.right-section{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.search input{
+    width:260px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 40px;
+}
+.searchbtn{
+    background-color: white;
+    font-size: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: url("coffeBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.base1{
+    height: 80px;
+    background-color: #412D15;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: bottom;
+    margin-top: 600px;
+}
+
+.base2{
+    background-color: #412D15;
+    border:black solid;
+    display:flex;
+    justify-content: center;
+    align-items: center;;
+    padding: 36px 0px;
+}
+
+.base2 h2{
+    font-size: 20px;
+    height: 25px;
+    color: #E5C58C;
+    width: 360px;
+}
+
+.base2 p{
+    font-size: 14px;
+    height: 36px;
+    width:360px;
+    color: #FFFFFF;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base2 input{
+    height: 46px;
+    width: 250px;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.base2 button{
+    height: 48px;
+    width:155px;
+    color:black;
+    background-color: #F7DCB0;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 1px 1px 1px 15px;
+}
+ul{
+    color:white;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    gap: 30px;
+}
+
+ul a:hover{
+    color:#d4a373;
+    transition: ease-in;
+    transition-duration: 1ms;
+    text-decoration: underline;
+}
+
+/* Isolated Footer CSS */
+.base3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background-color: #2b1e16;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+/* target ONLY lists inside .base3 */
+.base3 > .left-section,
+.base3 > .middle-section {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* target ONLY list items inside .base3 */
+.base3 li {
+  white-space: nowrap;
+  font-size: 15px;
+  color: #f5e6d3;
+  cursor: pointer;
+}
+
+.base3 li:hover {
+  color: #d4a373;
+}
+
+/* Right section inside .base3 */
+.base3 .right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.base3 .right-section img {
+  max-width: 180px;
+  height: auto;
+}
+
+.base3 .right-section p,
+.base3 .right-section a {
+  color: #f5e6d3;
+  text-decoration: none;
+  margin: 2px 0;
+}
+
+.lastbase {
+  min-height: 125px;
+  background-color: #412D15;
+  display: flex;
+  flex-direction: column; /* Stack Copyright above Addition */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+/* Matched lowercase 'copyright' */
+.lastbase > .copyright {
+  color: #E5C58C;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 10px 0; /* Clean spacing below copyright */
+}
+
+/* Matched lowercase 'addition' */
+.lastbase > .addition {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 850px; /* Constrains text width for readability */
+  width: 100%;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive layout for screens smaller than 768px */
+@media (max-width: 768px) {
+  .base3 {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .lastbase > .addition {
+    width: 95%;
+    padding: 0 10px;
+  }
+}
